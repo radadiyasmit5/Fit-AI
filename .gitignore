@@ -1,6 +1,4 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Dependencies
 node_modules/
 
 # Expo
@@ -9,33 +7,61 @@ dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# Native builds (generated — run `expo run:ios` / `expo run:android` to recreate)
+/ios
+/android
 .kotlin/
+
+# Native signing & certificates — never commit these
 *.orig.*
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.cer
+*.certSigningRequest
+*.provisionprofile
 
-# Metro
+# Metro bundler
 .metro-health-check*
 
-# debug
+# Debug logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
 # macOS
 .DS_Store
-*.pem
+.AppleDouble
+.LSOverride
 
-# local env files
-.env*.local
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# typescript
+# Environment variables — commit .env.example, never .env
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# TypeScript
 *.tsbuildinfo
 
-# generated native folders
-/ios
-/android
+# Editor
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+
+# Supabase local dev (keep migrations, ignore local config)
+supabase/.branches
+supabase/.temp
+
+# Build output
+build/
+out/

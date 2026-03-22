@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0e0e0f;
+  --surface: #161618;
+  --surface2: #1e1e21;
+  --border: rgba(255, 255, 255, 0.07);
+  --orange: #ff5e1f;
+  --orange-dim: rgba(255, 94, 31, 0.15);
+  --orange-glow: rgba(255, 94, 31, 0.3);
+  --text: #f0ede8;
+  --text2: #7a7875;
+  --text3: #4a4845;
+  --green: #2ecc8a;
+  --amber: #f0a500;
+  --blue: #4a9eff;
+  --font: "DM Sans", sans-serif;
+  --mono: "DM Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}

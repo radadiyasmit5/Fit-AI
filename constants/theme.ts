@@ -1,0 +1,17 @@
+export const T = {
+  bg: "#0e0e0f",
+  surface: "#161618",
+  surface2: "#1e1e21",
+  border: "rgba(255,255,255,0.07)",
+  orange: "#FF5E1F",
+  orangeDim: "rgba(255,94,31,0.15)",
+  orangeGlow: "rgba(255,94,31,0.3)",
+  text: "#f0ede8",
+  text2: "#7a7875",
+  text3: "#4a4845",
+  green: "#2ecc8a",
+  amber: "#f0a500",
+  blue: "#4a9eff",
+  mono: "DM Mono",
+  font: "DM Sans",
+} as const;
